@@ -24,6 +24,7 @@ public class User {
 
     @OneToOne(mappedBy = "user")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private Car car;
 
     public User() {

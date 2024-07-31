@@ -18,7 +18,6 @@ public class Car {
     private int series;
 
     @OneToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
     public User getUser() {
